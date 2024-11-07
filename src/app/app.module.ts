@@ -7,10 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentesModule } from './componentes/componentes.module';
 import { LoginComponent } from './module/auth/login/login.component';
 import { ForgotPasswordComponent } from './module/auth/forgot-password/forgot-password.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { AplicationModule } from './module/aplication/aplication.module';
 
 @NgModule({
   declarations: [
@@ -23,10 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentesModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule
+    AplicationModule
   ],
   providers: [],
   bootstrap: [AppComponent],

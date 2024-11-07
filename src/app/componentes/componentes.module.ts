@@ -9,13 +9,18 @@ import { CustomInputPasswordComponent } from './custom-input-password/custom-inp
 import { CustomSidenavComponent } from './custom-sidenav/custom-sidenav.component';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PartialBackgroundComponent } from './partial-background/partial-background.component';
 
 @NgModule({
   declarations: [
     CustomInputComponent,
     CustomButtonComponent,
     CustomInputPasswordComponent,
-    CustomSidenavComponent
+    CustomSidenavComponent,
+    CustomDialogComponent,
+    PartialBackgroundComponent
   ],
   imports: [
     CommonModule,
@@ -23,13 +28,15 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatIconModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    MatDialogModule
   ],
   exports:[
     CustomInputComponent,
     CustomButtonComponent,
     CustomInputPasswordComponent,
-    CustomSidenavComponent
+    CustomSidenavComponent,
+    CustomDialogComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
