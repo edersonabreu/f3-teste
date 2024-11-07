@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'projetoF3';
+  drawerOpened = true;
+
+  toggleDrawer() {
+    this.drawerOpened = !this.drawerOpened;
+  }
 }
