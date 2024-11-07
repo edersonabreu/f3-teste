@@ -1,0 +1,25 @@
+
+<mat-accordion>
+    <mat-expansion-panel expanded="true" *ngFor="let contribution of contributions">
+      <mat-expansion-panel-header>
+        <div class="panel-header">
+            <img src="./assets/images/icons/icon-databases.png" alt="icon-monthly-contribution">
+            <span class="title">Contribuição Mensal</span>
+        </div>
+      </mat-expansion-panel-header>
+
+      <div class="content">
+        <div class="line">
+          <span>Valor da Contribuição</span>
+          <b>{{ contribution.value | number:'1.2-2' }}</b>
+        </div>
+        <div class="line">
+          <span>Porcentagem do Salário</span>
+          <b>{{ contribution.percentage }}%</b>
+        </div>
+      </div>
+      <div class="action">
+        <button>alterar contribuição</button>
+      </div>
+    </mat-expansion-panel>
+</mat-accordion>
