@@ -1,2 +1,19 @@
+<mat-toolbar>
+    <div class="toolbar container">
+        <button (click)="toggleDrawer()">
+            <mat-icon>arrow_back</mat-icon>
+            MEU PLANO
+        </button>
+    </div>
+</mat-toolbar>
+<mat-drawer-container class="dashboard container">
+    <mat-drawer #drawer mode="side" [opened]="drawerOpened" class="menu">
+        <app-custom-sidenav></app-custom-sidenav>
+    </mat-drawer>
+    <mat-drawer-content class="main container">
+        Main content
+    </mat-drawer-content>
+</mat-drawer-container>
 
 <router-outlet></router-outlet>
+  
