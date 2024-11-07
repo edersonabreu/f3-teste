@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MonthlyContributionComponent } from './monthly-contribution/monthly-contribution.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MonthlyContributionComponent } from './monthly-contribution/monthly-con
     MatToolbarModule,
     MatButtonModule, 
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTableModule
   ]
 })
 export class AplicationModule { }
