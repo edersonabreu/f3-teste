@@ -5,7 +5,7 @@
 
 .menu{
     width: 336px;
-    padding-right: 15px;
+    padding-right: 30px;
 }
 
 .main{
@@ -22,7 +22,7 @@
 }
 
 .toolbar{
-    padding: 10px 0;
+    padding: 15px 0;
     box-sizing: border-box;
     border-bottom: 1px solid #BDBDBD;
 }
@@ -48,4 +48,14 @@
 
 ::ng-deep .mat-drawer-transition {
     transition: none !important;
+}
+
+
+@media (max-width: 768px) {
+    app-header{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+    }
 }

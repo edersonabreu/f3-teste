@@ -14,27 +14,18 @@ export class ForgotPasswordComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // openModal(): void {
-  //   this.dialog.open(CustomDialogComponent, {
-  //     width: '400px',    
-  //     height: '300px',  
-  //     data: {            
-  //       titulo: 'Senha redefinida com sucesso!',
-  //       icone: 'check',
-  //       subtitulo: 'Enviamos um e-mail com mais informações sobre, não esqueça de conferir também em sua caixa de spam.'
-  //     }
-  //   });
-  // }
-
-  openModal() {
-    const dialogRef = this.dialog.open(CustomDialogComponent, {
-      width: '640px',
-      height: 'auto',
-      data: { title: 'Editar tipo despesa' }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
+  openModal(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(CustomDialogComponent, {
+      width: '400px',    
+      height: '300px',  
+      data: {            
+        titulo: 'Senha redefinida com sucesso!',
+        icone: 'check',
+        subtitulo: 'Enviamos um e-mail com mais informações sobre, não esqueça de conferir também em sua caixa de spam.'
+      }
     });
   }
+
 
 }
