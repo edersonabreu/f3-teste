@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AplicationComponent } from './module/aplication/aplication.component';
 import { ExtractComponent } from './module/aplication/extract/extract.component';
+import { MonthlyContributionComponent } from './module/aplication/monthly-contribution/monthly-contribution.component';
 
 const routes: Routes = [
 
@@ -27,6 +28,7 @@ const routes: Routes = [
     component: AplicationComponent,
     children: [
       { path: 'extract', component: ExtractComponent },
+      { path: 'monthly_contribution', component: MonthlyContributionComponent },
     ]
   }
 ];

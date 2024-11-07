@@ -8,12 +8,15 @@ import { ExtractComponent } from './extract/extract.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { MonthlyContributionComponent } from './monthly-contribution/monthly-contribution.component';
 
 @NgModule({
   declarations: [
     AplicationComponent,
-    ExtractComponent
+    ExtractComponent,
+    MonthlyContributionComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule, 
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule
   ]
 })
 export class AplicationModule { }

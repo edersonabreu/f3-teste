@@ -28,7 +28,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_contribution_month.svg',
       label: 'Contribuição Mensal',
-      route: 'contribuite_month'
+      route: 'monthly_contribution'
     },
     {
       iconUrl: 'assets/images/icons/icon_bag_cash.svg',
@@ -43,7 +43,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_taxation.svg',
       label: 'Regime de Tributação',
-      route: 'documents'
+      route: 'tax'
     },
     {
       iconUrl: 'assets/images/icons/icon_request_benefit.svg',
@@ -53,7 +53,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_extract.svg',
       label: 'Extrato Regressivo',
-      route: 'extract'
+      route: 'extract-regressive'
     },
     {
       iconUrl: 'assets/images/icons/icon_info.svg',
@@ -63,7 +63,7 @@ export class CustomSidenavComponent implements OnInit {
   ];
 
   isActive(route: string): boolean {
-    return this.router.isActive(route, true);
+    return this.router.url === route;
   }
 
 }
