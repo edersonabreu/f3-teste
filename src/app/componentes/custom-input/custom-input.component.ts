@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CustomInputComponent implements OnInit {
 @Input() titulo!:string;
-@Input() type!:string;
+@Input() tipo!:string;
+@Input() icone!: string;
   constructor() { }
 
   ngOnInit(): void {

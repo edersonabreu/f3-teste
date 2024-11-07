@@ -1,1 +1,9 @@
-<mat-slide-toggle [type]="">{{titulo}}</mat-slide-toggle>
+
+
+<mat-form-field class="full-width">
+    <mat-label>{{titulo}}</mat-label>
+    <input matInput type="{{tipo}}" formControlName="login">
+    <mat-icon class="material-symbols-outlined">
+        check_circle
+    </mat-icon>
+</mat-form-field>
