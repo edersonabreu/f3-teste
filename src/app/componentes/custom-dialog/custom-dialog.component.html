@@ -1,3 +1,9 @@
+
+<mat-dialog-actions>
+    <mat-icon class="material-symbols-outlined" (click)="closeModal()" class="close">
+        close
+    </mat-icon>
+</mat-dialog-actions>
 <mat-dialog-content>
     <mat-icon class="material-symbols-outlined">
         {{ data.icone }} 
@@ -5,6 +11,3 @@
     <h2>{{ data.titulo }}</h2>
     <p>{{ data.subtitulo }}</p>
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-button (click)="closeModal()">Ok</button>
-</mat-dialog-actions>

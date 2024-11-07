@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PartialBackgroundComponent } from './partial-background/partial-background.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PartialBackgroundComponent } from './partial-background/partial-backgro
     CustomInputPasswordComponent,
     CustomSidenavComponent,
     CustomDialogComponent,
-    PartialBackgroundComponent
+    PartialBackgroundComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,9 @@ import { PartialBackgroundComponent } from './partial-background/partial-backgro
     CustomButtonComponent,
     CustomInputPasswordComponent,
     CustomSidenavComponent,
-    CustomDialogComponent
+    CustomDialogComponent,
+    PartialBackgroundComponent,
+    HeaderComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
