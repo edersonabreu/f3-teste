@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AplicationComponent } from './module/aplication/aplication.component';
+import { ExtractComponent } from './module/aplication/extract/extract.component';
 
 const routes: Routes = [
 
   {
-    path: '',  // Para o caminho base, redirecionamos para o login
+    path: '', 
     pathMatch: 'full',
     loadChildren: () => import('./module/auth/login/login.module').then(m => m.LoginModule)
   },
@@ -16,9 +18,16 @@ const routes: Routes = [
     path: 'forgot-password',
     loadChildren: () => import('./module/auth/forgot-password/forgot-password.module').then(m => m.ForgotPasswordModule)
   },
+  // {
+  //   path: '**',
+  //   redirectTo: 'login' 
+  // },
   {
-    path: '**',
-    redirectTo: 'login'  // Em caso de rota não encontrada, redireciona para login
+    path: 'aplication',
+    component: AplicationComponent,
+    children: [
+      { path: 'extract', component: ExtractComponent },
+    ]
   }
 ];
 
