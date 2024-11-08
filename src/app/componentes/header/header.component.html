@@ -2,11 +2,11 @@
     <div class="container">
         <div class="header-content">
             <div class="avatar">
-                <button [matMenuTriggerFor]="menu"><img src="./assets/images/avatar.png" alt="user_avatar"></button>
                 <mat-menu #menu="matMenu">
                     <button mat-menu-item>Perfil</button>
                     <button mat-menu-item (click)="onLogout()">Logout</button>
                 </mat-menu>
+                <button [matMenuTriggerFor]="menu"><img src="./assets/images/avatar.png" alt="user_avatar"></button>
             </div>
             <div class="utils">
                 <a routerLink="/aplication">

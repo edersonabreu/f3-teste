@@ -18,6 +18,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CustomInformationComponent } from './custom-information/custom-information.component';
 import { CustomAcordionContributionComponent } from './custom-acordion-contribution/custom-acordion-contribution.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { MatMenuModule } from '@angular/material/menu';
     RouterModule,
     MatDialogModule,
     MatExpansionModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   exports:[
     CustomInputComponent,
