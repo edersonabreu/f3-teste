@@ -5,6 +5,7 @@ import { ExtractComponent } from './module/aplication/extract/extract.component'
 import { MonthlyContributionComponent } from './module/aplication/monthly-contribution/monthly-contribution.component';
 import { InformationComponent } from './module/aplication/information/information.component';
 import { DocumentsComponent } from './module/aplication/documents/documents.component';
+import { RequestBenefitComponent } from './module/aplication/request-benefit/request-benefit.component';
 
 const routes: Routes = [
 
@@ -31,9 +32,10 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'extract', pathMatch: 'full' },
       { path: 'extract', component: ExtractComponent },
-      { path: 'monthly_contribution', component: MonthlyContributionComponent },
+      { path: 'monthly-contribution', component: MonthlyContributionComponent },
       { path: 'information', component: InformationComponent },
       { path: 'documents', component: DocumentsComponent },
+      { path: 'request-benefit', component: RequestBenefitComponent },
     ]
   }
 ];
