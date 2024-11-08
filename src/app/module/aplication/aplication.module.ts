@@ -17,7 +17,7 @@ import { MatTableModule } from '@angular/material/table';
   declarations: [
     AplicationComponent,
     ExtractComponent,
-    MonthlyContributionComponent
+    MonthlyContributionComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +28,7 @@ import { MatTableModule } from '@angular/material/table';
     MatButtonModule, 
     MatIconModule,
     MatExpansionModule,
-    MatTableModule
+    MatTableModule,
   ]
 })
 export class AplicationModule { }

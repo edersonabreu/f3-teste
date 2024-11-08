@@ -1,0 +1,21 @@
+
+
+<div class="custom-acordion">
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let item of items">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span><b>Data:</b> {{ item.data }}</span>
+              <span><b>Tipo:</b> {{ item.tipo }}</span>
+              <span><b>Valor:</b> {{ item.valor | number:'1.2-2'}}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="content">
+            <p><b>Nome:</b> {{ item.nome }} </p>
+            <p><b>Valor:</b> {{ item.valor }} </p>
+            <p><b>Banco:</b> {{ item.banco }} </p>
+            <p><b>Informações Adicionais:</b> {{ item.info }} </p>
+          </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

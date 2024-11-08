@@ -1,19 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-
-export interface PeriodicElement {
-  extrato: string;
-  data: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  { extrato: 'Extrato_00222122', data: '06/08/2010'},
-  { extrato: 'Extrato_83232222', data: '12/02/2011'},
-  { extrato: 'Extrato_93233343', data: '14/04/2014'},
-  { extrato: 'Extrato_23555333', data: '16/04/2015'},
-  { extrato: 'Extrato_23244444', data: '02/10/2016'},
-  { extrato: 'Extrato_23324332', data: '09/03/2018'},
-];
+import { AccordionItem } from 'src/app/componentes/custom-acordion-extract/custom-acordion-extract.component';
 
 @Component({
   selector: 'app-extract',
@@ -22,11 +8,14 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ExtractComponent implements OnInit {
 
-  displayedColumns: string[] = ['extrato', 'data'];
-  dataSource = ELEMENT_DATA;
-
   ngOnInit(): void {
   }
-
+  
+  mockData: AccordionItem[] = [
+    { data: '06/11/2024', tipo: 'Pix', nome: 'Jurandir da Silva', valor: 224.76, banco: 'Banco do Brasil', info: 'Esta é uma informação adicional sobre a transferência realizada' },
+    { data: '07/10/2024', tipo: 'Transferência Bancária', nome: 'Neide Aparecida', banco: 'Nu Bank', valor: 556.70, info: 'Esta é uma informação adicional sobre a transferência realizada' },
+    { data: '21/10/2024', tipo: 'Depósito direto', nome: 'Otávio Oliveira', valor: 870.25, banco: 'Sicred', info: 'Esta é uma informação adicional sobre a transferência realizada' },
+    { data: '08/09/2024', tipo: 'Transferência Bancária', nome: 'Renan Cardoso', banco: 'Caixa', valor: 214.85, info: 'Esta é uma informação adicional sobre a transferência realizada' }
+  ];
 
 }

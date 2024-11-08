@@ -13,6 +13,8 @@ import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PartialBackgroundComponent } from './partial-background/partial-background.component';
 import { HeaderComponent } from './header/header.component';
+import { CustomAcordionExtractComponent } from './custom-acordion-extract/custom-acordion-extract.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HeaderComponent } from './header/header.component';
     CustomSidenavComponent,
     CustomDialogComponent,
     PartialBackgroundComponent,
-    HeaderComponent
+    HeaderComponent,
+    CustomAcordionExtractComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +34,8 @@ import { HeaderComponent } from './header/header.component';
     MatIconModule,
     MatListModule,
     RouterModule,
-    MatDialogModule
+    MatDialogModule,
+    MatExpansionModule
   ],
   exports:[
     CustomInputComponent,
@@ -40,7 +44,8 @@ import { HeaderComponent } from './header/header.component';
     CustomSidenavComponent,
     CustomDialogComponent,
     PartialBackgroundComponent,
-    HeaderComponent
+    HeaderComponent,
+    CustomAcordionExtractComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
