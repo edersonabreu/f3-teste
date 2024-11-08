@@ -15,6 +15,7 @@ import { MatTableModule } from '@angular/material/table';
 import { InformationComponent } from './information/information.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { RequestBenefitComponent } from './request-benefit/request-benefit.component';
+import { RegressiveExtractComponent } from './regressive-extract/regressive-extract.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RequestBenefitComponent } from './request-benefit/request-benefit.compo
     InformationComponent,
     DocumentsComponent,
     RequestBenefitComponent,
+    RegressiveExtractComponent,
   ],
   imports: [
     CommonModule,

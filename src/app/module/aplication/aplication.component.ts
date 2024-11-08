@@ -56,6 +56,8 @@ export class AplicationComponent implements OnInit {
       this.selectedLabel = 'Documentos';
     } else if (routePath === 'request-benefit') {
       this.selectedLabel = 'Solicitar Benefício';
+    } else if (routePath === 'regressive-extract') {
+      this.selectedLabel = 'Extrato Regressivo';
     }
   }
 

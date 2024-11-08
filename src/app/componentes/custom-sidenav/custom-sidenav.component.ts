@@ -55,7 +55,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_extract.svg',
       label: 'Extrato Regressivo',
-      route: 'extract-regressive'
+      route: 'regressive-extract'
     },
     {
       iconUrl: 'assets/images/icons/icon_info.svg',

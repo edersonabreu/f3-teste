@@ -6,6 +6,7 @@ import { MonthlyContributionComponent } from './module/aplication/monthly-contri
 import { InformationComponent } from './module/aplication/information/information.component';
 import { DocumentsComponent } from './module/aplication/documents/documents.component';
 import { RequestBenefitComponent } from './module/aplication/request-benefit/request-benefit.component';
+import { RegressiveExtractComponent } from './module/aplication/regressive-extract/regressive-extract.component';
 
 const routes: Routes = [
 
@@ -36,6 +37,7 @@ const routes: Routes = [
       { path: 'information', component: InformationComponent },
       { path: 'documents', component: DocumentsComponent },
       { path: 'request-benefit', component: RequestBenefitComponent },
+      { path: 'regressive-extract', component: RegressiveExtractComponent },
     ]
   }
 ];
