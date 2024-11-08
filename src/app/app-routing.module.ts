@@ -7,6 +7,7 @@ import { InformationComponent } from './module/aplication/information/informatio
 import { DocumentsComponent } from './module/aplication/documents/documents.component';
 import { RequestBenefitComponent } from './module/aplication/request-benefit/request-benefit.component';
 import { RegressiveExtractComponent } from './module/aplication/regressive-extract/regressive-extract.component';
+import { TaxationRegimeComponent } from './module/aplication/taxation-regime/taxation-regime.component';
 
 const routes: Routes = [
 
@@ -38,6 +39,7 @@ const routes: Routes = [
       { path: 'documents', component: DocumentsComponent },
       { path: 'request-benefit', component: RequestBenefitComponent },
       { path: 'regressive-extract', component: RegressiveExtractComponent },
+      { path: 'taxation-regime', component: TaxationRegimeComponent },
     ]
   }
 ];
