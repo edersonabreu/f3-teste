@@ -4,13 +4,13 @@
     <div class="toolbar container">
         <button (click)="toggleDrawer()">
             <mat-icon>arrow_back</mat-icon>
-            MEU PLANO
+            {{ selectedLabel }}
         </button>
     </div>
 </mat-toolbar>
 <mat-drawer-container class="dashboard container">
     <mat-drawer #drawer mode="side" [opened]="drawerOpened" class="menu">
-        <app-custom-sidenav></app-custom-sidenav>
+        <app-custom-sidenav (labelSelected)="updateLabel($event)"></app-custom-sidenav>
     </mat-drawer>
     <mat-drawer-content class="main" [ngClass]="isSidebarVisible ? 'with-sidebar' : 'without-sidebar'">
         <router-outlet></router-outlet>

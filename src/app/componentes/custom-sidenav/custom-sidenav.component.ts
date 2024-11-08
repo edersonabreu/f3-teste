@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 export interface MenuItem {
@@ -14,6 +14,8 @@ export interface MenuItem {
 })
 export class CustomSidenavComponent implements OnInit {
 
+  @Output() labelSelected: EventEmitter<string> = new EventEmitter<string>();
+  
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -64,6 +66,10 @@ export class CustomSidenavComponent implements OnInit {
 
   isActive(route: string): boolean {
     return this.router.url === route;
+  }
+
+  onRouteClick(label: string): void {
+    this.labelSelected.emit(label);
   }
 
 }
