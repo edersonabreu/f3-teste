@@ -8,6 +8,8 @@ import { SidebarService } from 'src/app/services/sidebar/sidebar.service';
 })
 export class AplicationComponent implements OnInit {
 
+  selectedLabel: string = 'Ver Extrato';
+
   isSidebarVisible = true;
   constructor(private sidebarService: SidebarService) {}
 
@@ -23,6 +25,10 @@ export class AplicationComponent implements OnInit {
 
   toggleDrawer() {
     this.drawerOpened = !this.drawerOpened;
+  }
+
+  updateLabel(label: string): void {
+    this.selectedLabel = label;
   }
 
 }
