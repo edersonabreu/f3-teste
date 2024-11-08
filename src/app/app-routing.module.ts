@@ -4,6 +4,7 @@ import { AplicationComponent } from './module/aplication/aplication.component';
 import { ExtractComponent } from './module/aplication/extract/extract.component';
 import { MonthlyContributionComponent } from './module/aplication/monthly-contribution/monthly-contribution.component';
 import { InformationComponent } from './module/aplication/information/information.component';
+import { DocumentsComponent } from './module/aplication/documents/documents.component';
 
 const routes: Routes = [
 
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: 'extract', component: ExtractComponent },
       { path: 'monthly_contribution', component: MonthlyContributionComponent },
       { path: 'information', component: InformationComponent },
+      { path: 'documents', component: DocumentsComponent },
     ]
   }
 ];
