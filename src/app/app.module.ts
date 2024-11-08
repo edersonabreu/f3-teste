@@ -8,6 +8,7 @@ import { ComponentesModule } from './componentes/componentes.module';
 import { LoginComponent } from './module/auth/login/login.component';
 import { ForgotPasswordComponent } from './module/auth/forgot-password/forgot-password.component';
 import { AplicationModule } from './module/aplication/aplication.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AplicationModule } from './module/aplication/aplication.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentesModule,
-    AplicationModule
+    AplicationModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomInputComponent } from './custom-input.component';
+import { MatIconModule } from '@angular/material/icon';
 
 describe('CustomInputComponent', () => {
   let component: CustomInputComponent;
@@ -8,16 +9,19 @@ describe('CustomInputComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CustomInputComponent ]
-    })
-    .compileComponents();
+      declarations: [CustomInputComponent],
+      imports: [MatIconModule]  
+    }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CustomInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('deve criar o componente', () => {
     expect(component).toBeTruthy();
   });
+  
 });

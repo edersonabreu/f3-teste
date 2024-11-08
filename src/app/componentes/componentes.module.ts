@@ -17,6 +17,7 @@ import { CustomAcordionExtractComponent } from './custom-acordion-extract/custom
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CustomInformationComponent } from './custom-information/custom-information.component';
 import { CustomAcordionContributionComponent } from './custom-acordion-contribution/custom-acordion-contribution.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CustomAcordionContributionComponent } from './custom-acordion-contribut
     MatListModule,
     RouterModule,
     MatDialogModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   exports:[
     CustomInputComponent,
