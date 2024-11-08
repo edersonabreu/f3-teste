@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MonthlyContributionComponent } from './monthly-contribution/monthly-contribution.component';
 import { MatTableModule } from '@angular/material/table';
 import { InformationComponent } from './information/information.component';
+import { DocumentsComponent } from './documents/documents.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { InformationComponent } from './information/information.component';
     ExtractComponent,
     MonthlyContributionComponent,
     InformationComponent,
+    DocumentsComponent,
   ],
   imports: [
     CommonModule,

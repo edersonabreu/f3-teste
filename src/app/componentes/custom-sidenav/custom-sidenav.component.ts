@@ -48,7 +48,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_request_benefit.svg',
       label: 'Solicitar Benefício',
-      route: 'documents'
+      route: 'request-benefict'
     },
     {
       iconUrl: 'assets/images/icons/icon_extract.svg',
