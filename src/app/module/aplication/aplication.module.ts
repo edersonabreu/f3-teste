@@ -12,12 +12,14 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MonthlyContributionComponent } from './monthly-contribution/monthly-contribution.component';
 import { MatTableModule } from '@angular/material/table';
+import { InformationComponent } from './information/information.component';
 
 @NgModule({
   declarations: [
     AplicationComponent,
     ExtractComponent,
     MonthlyContributionComponent,
+    InformationComponent,
   ],
   imports: [
     CommonModule,
