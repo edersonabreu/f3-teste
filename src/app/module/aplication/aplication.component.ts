@@ -58,6 +58,10 @@ export class AplicationComponent implements OnInit {
       this.selectedLabel = 'Solicitar Benefício';
     } else if (routePath === 'regressive-extract') {
       this.selectedLabel = 'Extrato Regressivo';
+    } else if (routePath === 'extra-contribution') {
+      this.selectedLabel = 'Contribuição Extra';
+    } else if (routePath === 'taxation-regime') {
+      this.selectedLabel = 'Regime de Tributação';
     }
   }
 

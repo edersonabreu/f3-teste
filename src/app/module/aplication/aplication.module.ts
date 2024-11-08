@@ -17,6 +17,7 @@ import { DocumentsComponent } from './documents/documents.component';
 import { RequestBenefitComponent } from './request-benefit/request-benefit.component';
 import { RegressiveExtractComponent } from './regressive-extract/regressive-extract.component';
 import { TaxationRegimeComponent } from './taxation-regime/taxation-regime.component';
+import { ExtraContributionComponent } from './extra-contribution/extra-contribution.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TaxationRegimeComponent } from './taxation-regime/taxation-regime.compo
     RequestBenefitComponent,
     RegressiveExtractComponent,
     TaxationRegimeComponent,
+    ExtraContributionComponent,
   ],
   imports: [
     CommonModule,
