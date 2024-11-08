@@ -35,7 +35,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_bag_cash.svg',
       label: 'Contribuição Extra',
-      route: 'contribuite_extra'
+      route: 'extra-contribution'
     },
     {
       iconUrl: 'assets/images/icons/icon_document.svg',
