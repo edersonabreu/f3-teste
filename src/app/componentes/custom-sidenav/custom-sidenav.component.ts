@@ -45,7 +45,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_taxation.svg',
       label: 'Regime de Tributação',
-      route: 'tax'
+      route: 'taxation-regime'
     },
     {
       iconUrl: 'assets/images/icons/icon_request_benefit.svg',
