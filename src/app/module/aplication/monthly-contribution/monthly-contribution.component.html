@@ -5,46 +5,25 @@
   </div>
 </div>
 
-<div class="legenda">
+<div class="legend">
   <div class="item">
-    <div class="circulo" style="background-color: #594CBE;"></div>
-    <div class="descricao">
-      <strong>Contribuição Mensal</strong><br/>
-      R$ 499.999,99
+    <div class="description">
+      <div class="maker" style="background-color: #E22E6F; "></div>
+      <span>Contribuição Mensal</span><br/>
+      <strong>R$ 499.999,99</strong>
     </div>
   </div>
   <div class="item">
-    <div class="circulo" style="background-color: #E22E6F;"></div>
-    <div class="descricao">
-      <strong>Contribuição Voluntária</strong><br/>
-      R$ 499.999,99
+    <div class="description">
+      <div class="maker" style="background-color: #594CBE;"></div>
+      <span>Contribuição Voluntária</span><br/>
+      <strong>R$ 499.999,99</strong>
     </div>
   </div>
 </div>
-<mat-accordion>
-    <mat-expansion-panel expanded="true" *ngFor="let contribution of contributions">
-      <mat-expansion-panel-header>
-        <div class="panel-header">
-            <img src="./assets/images/icons/icon-databases.png" alt="icon-monthly-contribution">
-            <span class="title">Contribuição Mensal</span>
-        </div>
-      </mat-expansion-panel-header>
 
-      <div class="content">
-        <div class="line">
-          <span>Valor da Contribuição</span>
-          <b>{{ contribution.value | number:'1.2-2' }}</b>
-        </div>
-        <div class="line">
-          <span>Porcentagem do Salário</span>
-          <b>{{ contribution.percentage }}%</b>
-        </div>
-      </div>
-      <div class="action">
-        <button>alterar contribuição</button>
-      </div>
-    </mat-expansion-panel>
-    <div class="action-contributon">
-      <button>incluir contribuição</button>
-    </div>
-</mat-accordion>
+<app-custom-acordion-contribution [items]="mockData"></app-custom-acordion-contribution>
+
+<div class="action-contributon">
+  <app-custom-button titulo="incluir contribuição" type="button"></app-custom-button>
+</div>

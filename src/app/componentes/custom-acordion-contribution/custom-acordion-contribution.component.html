@@ -1,0 +1,25 @@
+
+<mat-accordion>
+    <mat-expansion-panel expanded="true" *ngFor="let item of items">
+      <mat-expansion-panel-header>
+        <div class="panel-header">
+            <img src="./assets/images/icons/icon-databases.png" alt="icon-monthly-contribution">
+            <span class="title">{{ item.titulo }}</span>
+        </div>
+      </mat-expansion-panel-header>
+
+      <div class="content">
+        <div class="line">
+          <span>Valor da Contribuição</span>
+          <b>{{ item.valor | number:'1.2-2' }}</b>
+        </div>
+        <div class="line" *ngIf="item.porcentagem != null && item.porcentagem > 0">
+          <span>Porcentagem do Salário</span>
+          <b>{{ item.porcentagem }}%</b>
+        </div>
+      </div>
+      <div class="action">
+        <app-custom-button titulo="alterar contribuição" type="button" css="custom-default"></app-custom-button>
+      </div>
+    </mat-expansion-panel>
+</mat-accordion>

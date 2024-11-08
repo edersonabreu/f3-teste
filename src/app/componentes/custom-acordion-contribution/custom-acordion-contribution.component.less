@@ -1,0 +1,66 @@
+
+.mat-expansion-panel{
+    border: 1px solid #BDBDBD;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    box-shadow: initial;
+}
+
+.panel-header img{
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.panel-header span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+mat-expansion-panel{
+    margin-bottom: 15px !important;
+}
+
+::ng-deep .mat-expansion-panel-header.mat-expanded{
+    height: 45px;
+}
+
+.content{
+    border-top: 1px solid #BDBDBD;
+    padding: 10px 0 0 0;
+}
+
+.content .line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.content .line span{
+    color: #464646;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.content .line b{
+    color: #464646;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.action{
+    margin: 20px 0 0 0 ;
+    text-indent: 50px;
+}
+
+@media (max-width: 768px) {
+    .action{
+        text-align: center;
+        text-indent: initial;
+    }
+}

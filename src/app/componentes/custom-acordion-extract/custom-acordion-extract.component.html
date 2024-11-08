@@ -11,10 +11,12 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="content">
-            <p><b>Nome:</b> {{ item.nome }} </p>
-            <p><b>Valor:</b> {{ item.valor }} </p>
-            <p><b>Banco:</b> {{ item.banco }} </p>
-            <p><b>Informações Adicionais:</b> {{ item.info }} </p>
+            <div class="content-info">
+              <p><b>Nome:</b> <br> {{ item.nome }} </p>
+              <p><b>Valor:</b> <br> {{ item.valor }} </p>
+              <p><b>Banco / Instituição:</b> <br> {{ item.banco }} </p>
+            </div>
+            <p><b>Informações Adicionais:</b> <br>{{ item.info }} </p>
           </div>
         </mat-expansion-panel>
     </mat-accordion>
