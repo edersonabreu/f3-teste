@@ -16,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { CustomAcordionExtractComponent } from './custom-acordion-extract/custom-acordion-extract.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CustomInformationComponent } from './custom-information/custom-information.component';
+import { CustomAcordionContributionComponent } from './custom-acordion-contribution/custom-acordion-contribution.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CustomInformationComponent } from './custom-information/custom-informat
     PartialBackgroundComponent,
     HeaderComponent,
     CustomAcordionExtractComponent,
-    CustomInformationComponent
+    CustomInformationComponent,
+    CustomAcordionContributionComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +50,8 @@ import { CustomInformationComponent } from './custom-information/custom-informat
     PartialBackgroundComponent,
     HeaderComponent,
     CustomAcordionExtractComponent, 
-    CustomInformationComponent
+    CustomInformationComponent,
+    CustomAcordionContributionComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as echarts from 'echarts';
+import { AccordionItem } from 'src/app/componentes/custom-acordion-contribution/custom-acordion-contribution.component';
 
 @Component({
   selector: 'app-monthly-contribution',
@@ -7,6 +8,12 @@ import * as echarts from 'echarts';
   styleUrls: ['./monthly-contribution.component.less']
 })
 export class MonthlyContributionComponent implements OnInit {
+
+    
+  mockData: AccordionItem[] = [
+    { titulo: 'Contribuição mensal', valor: 224.76, porcentagem: 5 },
+    { titulo: 'Contribuição voluntária', valor: 556.70, porcentagem:  0},
+  ];
 
   contributions = [
     {
@@ -36,6 +43,26 @@ export class MonthlyContributionComponent implements OnInit {
     const myChart = echarts.init(chartDom!);
 
     const option = {
+      title: [
+        {
+          text: 'Total em Contribuições',
+          subtext: 'R$ 999.999,99',
+          subtextStyle: {
+            fontSize: 20,
+            fontFamily: 'Poppins, sans-serif',
+            fontWeight: '600',
+            color: '#464646'  
+          },
+          left: 'center',
+          top: '0px',   
+          textStyle: {
+            fontSize: 14,
+            fontFamily: 'Poppins, sans-serif',
+            fontWeight: '400',
+            color: '#464646' 
+          }
+        }
+      ],
       tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}: R$ {c} ({d}%)'
@@ -47,7 +74,7 @@ export class MonthlyContributionComponent implements OnInit {
         {
           name: 'Contribuições',
           type: 'pie',
-          radius: ['50%', '70%'],
+          radius: ['47%', '70%'],
           avoidLabelOverlap: false,
           label: {
             show: false,
@@ -66,17 +93,18 @@ export class MonthlyContributionComponent implements OnInit {
               value: 499999.99,
               name: 'Contribuição Mensal',
               itemStyle: {
-                color: '#594CBE'  
+                color: '#E22E6F'
               }
             },
             {
-              value: 499999.99,
+              value: 199999.99,
               name: 'Contribuição Voluntária',
               itemStyle: {
-                color: '#E22E6F'
+                color: '#594CBE'  
               }
             }
-          ]
+          ],
+          top: '40px'
         }
       ]
     };

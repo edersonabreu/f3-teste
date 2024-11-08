@@ -29,6 +29,7 @@ const routes: Routes = [
     path: 'aplication',
     component: AplicationComponent,
     children: [
+      { path: '', component: ExtractComponent },
       { path: 'extract', component: ExtractComponent },
       { path: 'monthly_contribution', component: MonthlyContributionComponent },
       { path: 'information', component: InformationComponent },
