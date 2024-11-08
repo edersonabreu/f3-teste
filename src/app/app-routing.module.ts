@@ -9,14 +9,9 @@ import { RequestBenefitComponent } from './module/aplication/request-benefit/req
 import { RegressiveExtractComponent } from './module/aplication/regressive-extract/regressive-extract.component';
 import { TaxationRegimeComponent } from './module/aplication/taxation-regime/taxation-regime.component';
 import { ExtraContributionComponent } from './module/aplication/extra-contribution/extra-contribution.component';
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
-
-  {
-    path: '', 
-    pathMatch: 'full',
-    loadChildren: () => import('./module/auth/login/login.module').then(m => m.LoginModule)
-  },
   {
     path: 'login',
     loadChildren: () => import('./module/auth/login/login.module').then(m => m.LoginModule)
@@ -25,13 +20,10 @@ const routes: Routes = [
     path: 'forgot-password',
     loadChildren: () => import('./module/auth/forgot-password/forgot-password.module').then(m => m.ForgotPasswordModule)
   },
-  // {
-  //   path: '**',
-  //   redirectTo: 'login' 
-  // },
   {
     path: 'aplication',
     component: AplicationComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: '', redirectTo: 'extract', pathMatch: 'full' },
       { path: 'extract', component: ExtractComponent },
@@ -43,7 +35,11 @@ const routes: Routes = [
       { path: 'taxation-regime', component: TaxationRegimeComponent },
       { path: 'extra-contribution', component: ExtraContributionComponent }
     ]
-  }
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./module/auth/login/login.module').then(m => m.LoginModule)
+  },
 ];
 
 @NgModule({

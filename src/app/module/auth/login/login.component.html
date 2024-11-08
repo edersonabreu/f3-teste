@@ -16,9 +16,9 @@
                         início ao seu acesso.</p>
                 </div>
                 <div class="form">
-                    <form>
-                        <app-custom-input titulo="Email ou CPF" icone="check_circle" type="text"></app-custom-input>
-                        <app-custom-input-password titulo="Senha" type="password"></app-custom-input-password>
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <app-custom-input titulo="Email ou CPF" icone="check_circle" formControlName="login" name="login" ></app-custom-input>
+                        <app-custom-input-password titulo="Senha" type="password" formControlName="senha" name="senha"></app-custom-input-password>
                         <div class="button-template">
                             <app-custom-button type="submit" titulo="Acessar"></app-custom-button>
                         </div>

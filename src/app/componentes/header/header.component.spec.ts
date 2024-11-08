@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -8,16 +11,17 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(HeaderComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+      declarations: [HeaderComponent],
+      imports: [
+        MatMenuModule,          
+        MatExpansionModule,     
+        BrowserAnimationsModule 
+      ]
+    }).compileComponents();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('deve criar o componente', () => {
+    expect(component).toBeTruthy(); 
   });
+
 });
