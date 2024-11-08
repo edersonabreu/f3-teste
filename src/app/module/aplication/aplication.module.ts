@@ -18,6 +18,9 @@ import { RequestBenefitComponent } from './request-benefit/request-benefit.compo
 import { RegressiveExtractComponent } from './regressive-extract/regressive-extract.component';
 import { TaxationRegimeComponent } from './taxation-regime/taxation-regime.component';
 import { ExtraContributionComponent } from './extra-contribution/extra-contribution.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,8 @@ import { ExtraContributionComponent } from './extra-contribution/extra-contribut
     MatIconModule,
     MatExpansionModule,
     MatTableModule,
+    BrowserAnimationsModule,
+    MatMenuModule
   ]
 })
 export class AplicationModule { }
