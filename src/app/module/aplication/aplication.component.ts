@@ -48,12 +48,14 @@ export class AplicationComponent implements OnInit {
 
     if (routePath === 'extract') {
       this.selectedLabel = 'Ver Extrato';
-    } else if (routePath === 'monthly_contribution') {
+    } else if (routePath === 'monthly-contribution') {
       this.selectedLabel = 'Contribuição Mensal';
     } else if (routePath === 'information') {
       this.selectedLabel = 'Informações';
     } else if (routePath === 'documents') {
       this.selectedLabel = 'Documentos';
+    } else if (routePath === 'request-benefit') {
+      this.selectedLabel = 'Solicitar Benefício';
     }
   }
 

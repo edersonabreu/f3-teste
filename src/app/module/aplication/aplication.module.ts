@@ -14,6 +14,7 @@ import { MonthlyContributionComponent } from './monthly-contribution/monthly-con
 import { MatTableModule } from '@angular/material/table';
 import { InformationComponent } from './information/information.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { RequestBenefitComponent } from './request-benefit/request-benefit.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DocumentsComponent } from './documents/documents.component';
     MonthlyContributionComponent,
     InformationComponent,
     DocumentsComponent,
+    RequestBenefitComponent,
   ],
   imports: [
     CommonModule,

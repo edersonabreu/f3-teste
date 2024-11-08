@@ -30,7 +30,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_contribution_month.svg',
       label: 'Contribuição Mensal',
-      route: 'monthly_contribution'
+      route: 'monthly-contribution'
     },
     {
       iconUrl: 'assets/images/icons/icon_bag_cash.svg',
@@ -50,7 +50,7 @@ export class CustomSidenavComponent implements OnInit {
     {
       iconUrl: 'assets/images/icons/icon_request_benefit.svg',
       label: 'Solicitar Benefício',
-      route: 'request-benefict'
+      route: 'request-benefit'
     },
     {
       iconUrl: 'assets/images/icons/icon_extract.svg',
