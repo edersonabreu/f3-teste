@@ -1,0 +1,71 @@
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input.ng-touched.ng-invalid {
+    border-color: red;
+  }
+
+  .buttons button{
+    font-family: "Poppins", sans-serif; 
+    padding: 5px 10px;
+    border-radius: 3px;
+    min-width: 100px;
+    background-color: #1aaab2;
+    color: #fff;
+    border: 1px solid #1AAAB2;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .buttons .confirm{
+    background-color: #1aaab2;
+    border: 1px solid #1AAAB2;
+  }
+
+  .buttons .cancel{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: #464646;
+  }
+
+  .form-group{
+    margin: 0 0 5px 0;
+  }
+
+  label{
+    font-size: 15px;
+  }
+
+  .form-group input[type="number"], .form-group input[type="text"]{
+    width: 100% - 6px;
+    border-radius: 3px;
+    border: 1px solid #464646;
+    outline: none;
+    height: 22px;
+    padding: 3px 10px;
+  }
+
+  .modal-title{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-title h2{
+    margin: 0 0 15px 0;
+    color: #464646;
+    font-size: 18px;
+  }
+
+  .modal-title mat-icon{
+    cursor: pointer;
+    color: #464646;
+  }
