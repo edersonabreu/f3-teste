@@ -8,12 +8,12 @@
 
 <form [formGroup]="contributionForm">
   <div class="form-group">
-    <input type="radio" id="contribuicaoMensal" formControlName="titulo" value="Contribuição mensal" (change)="onTipoContribuicaoChange()" name="titulo">
-    <label for="contribuicaoMensal">Contribuição mensal</label>
+    <input type="radio" class="radio" id="contribuicaoMensal" formControlName="titulo" value="Contribuição mensal" (change)="onTipoContribuicaoChange()" name="titulo">
+    <label for="contribuicaoMensal" class="radio" >Contribuição mensal</label>
   </div>
   <div class="form-group">
-    <input type="radio" id="contribuicaoVoluntaria" formControlName="titulo" value="Contribuição voluntária" (change)="onTipoContribuicaoChange()" name="titulo">
-    <label for="contribuicaoVoluntaria">Contribuição voluntária</label>
+    <input type="radio" class="radio" id="contribuicaoVoluntaria" formControlName="titulo" value="Contribuição voluntária" (change)="onTipoContribuicaoChange()" name="titulo">
+    <label for="contribuicaoVoluntaria" class="radio" >Contribuição voluntária</label>
   </div>
   <div class="form-group">
     <label for="valorContribuicao">Valor da contribuição</label> <br>
