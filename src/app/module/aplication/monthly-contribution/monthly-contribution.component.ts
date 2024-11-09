@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import * as echarts from 'echarts';
 import { AccordionItem } from 'src/app/componentes/custom-acordion-contribution/custom-acordion-contribution.component';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { CustomContributionDialogComponent } from 'src/app/componentes/custom-contribution-dialog/custom-contribution-dialog.component';
 
 @Component({
   selector: 'app-monthly-contribution',
@@ -8,11 +10,10 @@ import { AccordionItem } from 'src/app/componentes/custom-acordion-contribution/
   styleUrls: ['./monthly-contribution.component.less']
 })
 export class MonthlyContributionComponent implements OnInit {
-
     
   mockData: AccordionItem[] = [
-    { titulo: 'Contribuição mensal', valor: 224.76, porcentagem: 5 },
-    { titulo: 'Contribuição voluntária', valor: 556.70, porcentagem:  0},
+    { titulo: 'Contribuição mensal', valor: 'R$ 224.76', porcentagem: 5 },
+    { titulo: 'Contribuição voluntária', valor: 'R$ 556.70', porcentagem:  0},
   ];
 
   contributions = [
@@ -32,7 +33,9 @@ export class MonthlyContributionComponent implements OnInit {
 
   allExpanded = true;
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
     this.initChart();
@@ -111,6 +114,23 @@ export class MonthlyContributionComponent implements OnInit {
 
     myChart.setOption(option);
     myChart.resize();
+  }
+
+  // Método para abrir o modal
+  openDialog(): void {
+    const dialogRef = this.dialog.open(CustomContributionDialogComponent, {
+      width: '400px',
+      data: { titulo_modal: 'Incluir Contribuição' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.mockData.push(result);
+        console.log('A contribuição foi incluída:', result);
+      } else {
+        console.log('O diálogo foi fechado sem incluir dados.');
+      }
+    });
   }
 
 }

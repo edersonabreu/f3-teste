@@ -19,8 +19,9 @@ import { CustomInformationComponent } from './custom-information/custom-informat
 import { CustomAcordionContributionComponent } from './custom-acordion-contribution/custom-acordion-contribution.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomContributionDialogComponent } from './custom-contribution-dialog/custom-contribution-dialog.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     CustomAcordionExtractComponent,
     CustomInformationComponent,
-    CustomAcordionContributionComponent
+    CustomAcordionContributionComponent,
+    CustomContributionDialogComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatExpansionModule,
     MatMenuModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   exports:[
     CustomInputComponent,
@@ -58,7 +61,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     CustomAcordionExtractComponent, 
     CustomInformationComponent,
-    CustomAcordionContributionComponent
+    CustomAcordionContributionComponent,
+    CustomContributionDialogComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
