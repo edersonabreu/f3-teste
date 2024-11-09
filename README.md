@@ -4,7 +4,7 @@ Este projeto foi feito com [Angular CLI](https://github.com/angular/angular-cli)
 
 ## Informações gerais
 
-Este projeto foi feito utilizando o Angular Material, utilizando conceitos de componentização e modularização. 
+Este projeto foi feito utilizando o Angular Material, utilizando conceitos de componentização e modularização, navegue entre as páginas, e execute ações pois está bem completo. 
 
 ## Instruções de configuração
 
