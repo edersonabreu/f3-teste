@@ -20,6 +20,8 @@ import { CustomAcordionContributionComponent } from './custom-acordion-contribut
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomContributionDialogComponent } from './custom-contribution-dialog/custom-contribution-dialog.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { LoadingComponent } from './loading/loading.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
@@ -35,6 +37,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     CustomAcordionExtractComponent,
     CustomInformationComponent,
     CustomAcordionContributionComponent,
+    CustomContributionDialogComponent,
     LoadingComponent
   ],
   imports: [
@@ -49,6 +52,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatMenuModule,
     MatButtonModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MatProgressSpinnerModule
   ],
   exports:[
@@ -62,6 +66,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     CustomAcordionExtractComponent, 
     CustomInformationComponent,
     CustomAcordionContributionComponent,
+    CustomContributionDialogComponent,
     LoadingComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

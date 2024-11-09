@@ -1,29 +1,30 @@
-
-<div class="graph">
-  <div class="graph-content">
-    <div id="graph"></div>
-  </div>
-</div>
-
-<div class="legend">
-  <div class="item">
-    <div class="description">
-      <div class="maker" style="background-color: #E22E6F; "></div>
-      <span>Contribuição Mensal</span><br/>
-      <strong>R$ 499.999,99</strong>
+<div class="main">
+  <div class="graph">
+    <div class="graph-content">
+      <div id="graph"></div>
     </div>
   </div>
-  <div class="item">
-    <div class="description">
-      <div class="maker" style="background-color: #594CBE;"></div>
-      <span>Contribuição Voluntária</span><br/>
-      <strong>R$ 499.999,99</strong>
+  
+  <div class="legend">
+    <div class="item">
+      <div class="description">
+        <div class="maker" style="background-color: #E22E6F; "></div>
+        <span>Contribuição Mensal</span><br/>
+        <strong>R$ 499.999,99</strong>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <div class="maker" style="background-color: #594CBE;"></div>
+        <span>Contribuição Voluntária</span><br/>
+        <strong>R$ 499.999,99</strong>
+      </div>
     </div>
   </div>
-</div>
-
-<app-custom-acordion-contribution [items]="mockData"></app-custom-acordion-contribution>
-
-<div class="action-contributon">
-  <app-custom-button titulo="incluir contribuição" type="button"></app-custom-button>
+  
+  <app-custom-acordion-contribution [items]="mockData"></app-custom-acordion-contribution>
+  
+  <div class="action-contributon">
+    <app-custom-button titulo="incluir contribuição" type="button" (click)="openDialog()"></app-custom-button>
+  </div>
 </div>

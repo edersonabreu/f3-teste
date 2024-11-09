@@ -11,7 +11,7 @@
       <div class="content">
         <div class="line">
           <span>Valor da Contribuição</span>
-          <b>{{ item.valor | number:'1.2-2' }}</b>
+          <b>{{ item.valor }}</b>
         </div>
         <div class="line" *ngIf="item.porcentagem != null && item.porcentagem > 0">
           <span>Porcentagem do Salário</span>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="action">
-        <app-custom-button titulo="alterar contribuição" type="button" css="custom-default"></app-custom-button>
+        <app-custom-button titulo="alterar contribuição" type="button" css="custom-default" (click)="openEditModal(item)"></app-custom-button>
       </div>
     </mat-expansion-panel>
 </mat-accordion>
