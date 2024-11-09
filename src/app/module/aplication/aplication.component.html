@@ -1,5 +1,8 @@
 
-<app-header></app-header>
+<app-header (loading)="onLoadingEvent($event)"></app-header>
+<div *ngIf="isLoading">
+    <app-loading></app-loading> 
+</div>
 <mat-toolbar>
     <div class="toolbar container">
         <button (click)="toggleDrawer()">

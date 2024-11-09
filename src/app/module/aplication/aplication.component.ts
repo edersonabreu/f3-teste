@@ -19,6 +19,7 @@ export class AplicationComponent implements OnInit {
   ) {}
 
   private resizeListener: any;
+  isLoading: boolean = false;
 
   ngOnInit() {
     // this.sidebarService.sidebarVisibility$.subscribe((isVisible) => {
@@ -88,6 +89,16 @@ export class AplicationComponent implements OnInit {
       this.drawerOpened = false;
     } else {
       this.drawerOpened = true;
+    }
+  }
+
+  onLoadingEvent(isLoading: boolean) {
+    this.isLoading = isLoading;
+
+    if (isLoading) {
+      setTimeout(() => {
+        this.isLoading = false; 
+      }, 3000);
     }
   }
 

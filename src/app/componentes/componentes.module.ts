@@ -22,6 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomContributionDialogComponent } from './custom-contribution-dialog/custom-contribution-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoadingComponent } from './loading/loading.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CustomAcordionExtractComponent,
     CustomInformationComponent,
     CustomAcordionContributionComponent,
-    CustomContributionDialogComponent
+    CustomContributionDialogComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +52,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatMenuModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule
   ],
   exports:[
     CustomInputComponent,
@@ -62,7 +66,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CustomAcordionExtractComponent, 
     CustomInformationComponent,
     CustomAcordionContributionComponent,
-    CustomContributionDialogComponent
+    CustomContributionDialogComponent,
+    LoadingComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
