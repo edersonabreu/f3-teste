@@ -1,27 +1,47 @@
-# ProjetoF3
+# Projeto Teste - Desenvolvedor Front End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Este projeto foi feito com [Angular CLI](https://github.com/angular/angular-cli) versão 14.2.13.
 
-## Development server
+## Informações gerais
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto foi feito utilizando o Angular Material, utilizando conceitos de componentização e modularização. 
 
-## Code scaffolding
+## Instruções de configuração
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Para instalar o angular na versão do projeto, execute: npm install -g @angular/cli@14.2.13
+- Verifique a versão do NVM utilizado em sua máquina local com o comando: nvm --version 
+- Este projeto funciona com a versão 16 e 18 do NVM, caso não tenha instalado execute: nvm install 16
+- Feita a instalação do NVM execute o comando referente a versão instalada: nvm use 16
+- Faça clone do projeto utilizado o HTTP/SSH disponíveis no git com o comando: git clone HTTP/SSH
+- Clone finalizado na pasta desejada, navegue até a pasta com CMD e execute: npm install
+- E finalize executando o comando para rodar a aplicação: npm start 
 
-## Build
+Se tudo ocorrer corretamente, abra o navegador e coloque o link: `http://localhost:4200/`. A aplicação deverá aparecer. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Acesso ao dashboard
 
-## Running unit tests
+Para acesso ao dashboard, utilize os dados de acesso abaixo:
+login: teste@navega.com
+senha: 123
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Para executar teste unitários
 
-## Running end-to-end tests
+Execute `ng test` para executar os testes utilizando [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Prints da aplicação
 
-## Further help
+### Login - Desktop
+![login-desktop](https://github.com/user-attachments/assets/8276018e-170f-47a1-a524-d29283fe3324)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Esqueceu a senha - Desktop
+![esqueceu-senha-desktop](https://github.com/user-attachments/assets/de999e11-5b1c-4294-b530-05ec171c4862)
+
+### Login e Esqueceu a senha - Mobile
+![imagens_mobile_login](https://github.com/user-attachments/assets/d2025c24-1527-4558-907e-a65eed8ee5d4)
+
+### Dashboard - Desktop
+![dashboard-desktop](https://github.com/user-attachments/assets/6047283d-a047-45b8-8f84-ab16f226b4d9)
+
+### Dashboard - Mobile 
+![imagens_mobile_dashboard](https://github.com/user-attachments/assets/13d914b0-c6cd-4c0c-8f67-f3c7a716e11b)
+
