@@ -98,7 +98,7 @@ export class AplicationComponent implements OnInit {
     if (isLoading) {
       setTimeout(() => {
         this.isLoading = false; 
-      }, 3000);
+      }, 2000);
     }
   }
 
