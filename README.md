@@ -21,6 +21,7 @@ Se tudo ocorrer corretamente, abra o navegador e coloque o link: `http://localho
 ## Acesso ao dashboard
 
 Para acesso ao dashboard, utilize os dados de acesso abaixo:
+
 login: teste@navega.com
 senha: 123
 
